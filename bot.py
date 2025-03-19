@@ -8,4 +8,4 @@ delta = next - today
 token = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(token)
 chnl = '@VoidOpa'
-bot.edit_message_text(f"Осталось {delta.days}/nПоследнее обновление: {today}", chat_id=chnl, message_id = 186)
+bot.edit_message_text(f"Осталось {delta.days}\nПоследнее обновление: {today.split(".")[0]}", chat_id=chnl, message_id = 186)
